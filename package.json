@@ -1,0 +1,28 @@
+{
+  "name": "@dpack/secret-storage",
+  "version": "0.1.1",
+  "description": "Library For dPack Secret Key Storage",
+  "contributors": [
+    "Jared Rice Sr. <jared@dwebs.io>",
+    "Distributed Webs Project, LLC. <labs@distributedwebs.org>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test/*.js | tap-spec"
+  },
+  "dependencies": {
+    "@dwcore/ref": "dwcore/ref#master",
+    "os-homedir": "^1.0.2"
+  },
+  "devDependencies": {
+    "@ddrive/core": "ddrives/core#master",
+    "@dwcore/rem": "dwcore/rem#master",
+    "standard": "*",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
