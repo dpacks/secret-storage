@@ -12,12 +12,12 @@
     "test": "standard && tape test/*.js | tap-spec"
   },
   "dependencies": {
-    "@dwcore/ref": "dwcore/ref#master",
+    "@dwcore/ref": "*",
     "os-homedir": "^1.0.2"
   },
   "devDependencies": {
     "@ddrive/core": "ddrives/core#master",
-    "@dwcore/rem": "dwcore/rem#master",
+    "@dwcore/rem": "*",
     "standard": "*",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
