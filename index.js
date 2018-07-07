@@ -1,6 +1,6 @@
 var path = require('path')
 var homedir = require('os-homedir')
-var dwRef = require('@dwcore/ref')
+var raf = require('random-access-file')
 
 module.exports = function (dir) {
   if (!dir) dir = path.join(homedir(), '.dpack', 'secret_keys')
@@ -10,8 +10,8 @@ module.exports = function (dir) {
     if (typeof revKey !== 'string') revKey = revKey.toString('hex')
 
     return new Storage(
-      dwRef(name),
-      dwRef(path.join(dir, revKey.slice(0, 2), revKey.slice(2)))
+      raf(name),
+      raf(path.join(dir, revKey.slice(0, 2), revKey.slice(2)))
     )
   }
 }
