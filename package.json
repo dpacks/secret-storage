@@ -1,6 +1,6 @@
 {
   "name": "@dpack/secret-storage",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Library For dPack Secret Key Storage",
   "contributors": [
     "Jared Rice Sr. <jared@dwebs.io>",

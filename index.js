@@ -3,7 +3,7 @@ var homedir = require('os-homedir')
 var raf = require('random-access-file')
 
 module.exports = function (dir) {
-  if (!dir) dir = path.join(homedir(), '.dpack', 'secret_keys')
+  if (!dir) dir = path.join(homedir(), '.dweb', 'secret_keys')
   return function (name, opts) {
     var revKey = opts.revelationKey
     if (!revKey) throw new Error('Revelation key required')
